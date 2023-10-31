@@ -41,7 +41,7 @@ const Modal = ({ id, name, blank, lines, handleCloseModal }) => {
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement("a");
         a.href = url;
-        a.download = `${name}`;
+        a.download = `${name}.png`;
         a.click();
       });
   }
